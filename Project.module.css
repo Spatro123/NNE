@@ -1,0 +1,248 @@
+
+.projectheading {
+  font-family: 'Arial', sans-serif;
+}
+
+.projectheading h2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  font-size: 3rem;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #852007;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 20px;
+  margin-top: 120px;
+}
+
+.herotext {
+  flex: 1;
+  max-width: 50%;
+}
+
+.herotext h1 {
+  font-size: 2.5em;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.herotext h1 span {
+  color: #e1dfea;
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+}
+
+.statitem {
+  cursor: pointer; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.statitem:hover {
+  transform: scale(1.1); 
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.statitem p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.statitem small {
+  display: block;
+  margin-top: 5px;
+  color: #777;
+}
+
+.heroimage {
+  flex: 1;
+  max-width: 50%;
+}
+
+.heroimage img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+.projectssection {
+  text-align: center;
+  margin: 40px 20px;
+}
+
+.projectssection h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: antiquewhite;
+}
+
+.filtertabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filtertabs span {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.activetab {
+  background-color: #852007;
+  color: white;
+}
+
+.projectsgallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projectcard {
+  text-align: center;
+}
+
+.projectcard img {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.projectdescription {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #9b9898;
+}
+
+.projectheading {
+  font-family: 'Arial', sans-serif;
+}
+.projectheading h2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  font-size: 3rem;
+  
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #852007;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 20px;
+  margin-top: 120px;
+}
+
+.herotext {
+  flex: 1;
+  max-width: 50%;
+}
+
+.herotext h1 {
+  font-size: 2.5em;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.herotext h1 span {
+  color: #e1dfea;
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+}
+
+.statitem p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.statitem small {
+  display: block;
+  margin-top: 5px;
+  color: #777;
+}
+
+.heroimage {
+  flex: 1;
+  max-width: 50%;
+}
+
+.heroimage img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.projectssection {
+  text-align: center;
+  margin: 40px 20px;
+}
+
+.projectssection h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: antiquewhite;
+}
+
+.filtertabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filtertabs span {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.activetab {
+  background-color: #852007;
+  color: white;
+}
+
+.projectsgallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projectcard {
+  text-align: center;
+}
+
+.projectcard img {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.projectdescription {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #9b9898;
+}
