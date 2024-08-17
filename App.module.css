@@ -234,12 +234,13 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(./Safety\ First.png) no-repeat center center;
+  background: url(./Safety\ First\ .png) no-repeat center center;
   background-size: cover;
 }
 
 .safetyOverlayText {
   position: absolute;
+font-family: Brittany;
   top: 60%;
   left: 24%;
   transform: translate(-50%, -50%);

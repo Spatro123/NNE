@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';  // Import useNavigate
 import image1 from "./1.jpg";
 import image2 from "./2.jpg";
 import image3 from "./3.jpg";
@@ -18,7 +19,7 @@ import s9 from "./s9.png";
 import s10 from "./s10.png";
 import s11 from "./s11.png";
 import s12 from "./s12.png";
-import b4 from "./Safety First.png"; 
+import b4 from "./Safety First .png"; 
 import classes from './App.module.css';
 import s13 from './S13.png'
 import Footer from './Footer';
@@ -39,11 +40,11 @@ import a17 from './pwd-removebg-preview.png';
 import a18 from './ssu-removebg-preview.png';
 import a19 from './vedant-removebg-preview (1).png';
 
-
 const images = [image1, image2, image3, image4, image5];
 
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const navigate = useNavigate();  
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -52,16 +53,11 @@ const App = () => {
 
     return () => clearInterval(interval);
   }, []);
-  const handleScroll = () => {
-    const sixthBlock = document.querySelector(`.${classes.sixthBlock}`);
-    if (sixthBlock && sixthBlock.getBoundingClientRect().top <= window.innerHeight) {
-      sixthBlock.classList.add(classes.active);
-    }
-  };
 
   const clients = [
-    a1,a2,  a3, a4, a5, a6, a7, a8,  a10, a11, a12,a13, a14, a17,a18
+    a1, a2, a3, a4, a5, a6, a7, a8, a10, a11, a12, a13, a14, a17, a18
   ];
+
   return (
     <div className={classes.App}>
       <header className={classes.Appheader}>
@@ -80,9 +76,18 @@ const App = () => {
         <div className={classes.videoOverlayText}>
           Building Tomorrow's Infrastructure Today<br />
           Your Trusted Partner for Innovative Solutions and Sustainable Development
-          <button className={classes.knowMoreButton}>Know More</button>
+          <button
+            className={classes.knowMoreButton}
+            onClick={() => navigate('/about')}  
+          >
+            Know More
+          </button>
         </div>
       </section>
+      
+      
+
+
       <section className={classes.imageSection}>
         <div className={classes.imageOverlayText}>
           We Make Your Vision Reality
@@ -150,9 +155,9 @@ const App = () => {
         </div>
       </section>
       <section className={classes.fifthBlock}>
-        <div className={classes.safetyOverlayText}>
+        {/* <div className={classes.safetyOverlayText}>
           Safety isn't expensive, it's priceless
-        </div>
+        </div> */}
       </section>
 
       <div className={classes.sixthBlock}>
@@ -164,8 +169,9 @@ const App = () => {
           </div>
         </div>
         
+      
+
       <Footer className={classes.footer}/>
-    
     </div>
   );
 };
