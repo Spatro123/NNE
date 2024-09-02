@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';  // Import useNavigate
+import { useNavigate } from 'react-router-dom';
 import image1 from "./1.jpg";
 import image2 from "./2.jpg";
 import image3 from "./3.jpg";
 import image4 from './4.jpg';
 import image5 from "./5.jpg";
 import backgroundVideo from "./3D House Animation_1.mp4";
-import "./App.css";
+import classes from "./App.module.css"
+import "./App.css"; 
 import s1 from "./s1.png";
 import s2 from "./s2.png";
 import s3 from "./s3.png";
-import s4 from "./s4.png";
-import s5 from './s5.png';
+import s4 from './s4.png';
+import s5 from "./s5.png";
 import s6 from "./s6.png";
 import s7 from "./s7.png";
 import s8 from "./s8.png";
@@ -19,9 +20,7 @@ import s9 from "./s9.png";
 import s10 from "./s10.png";
 import s11 from "./s11.png";
 import s12 from "./s12.png";
-import b4 from "./Safety First .png"; 
-import classes from './App.module.css';
-import s13 from './S13.png'
+import s13 from './S13.png';
 import Footer from './Footer';
 import a1 from './tata-removebg-preview.png';
 import a2 from './indianoil-removebg-preview (copy).png';
@@ -44,7 +43,7 @@ const images = [image1, image2, image3, image4, image5];
 
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const navigate = useNavigate();  
+  const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -55,7 +54,7 @@ const App = () => {
   }, []);
 
   const clients = [
-    a1, a2, a3, a4, a5, a6, a7, a8, a10, a11, a12, a13, a14, a17, a18
+    a1, a2, a3, a4, a5, a6, a7, a8, a10, a11, a12, a13, a14, a17, a18, a19
   ];
 
   return (
@@ -68,9 +67,10 @@ const App = () => {
           </div>
         </div>
       </header>
+
       <section className={classes.videoSection}>
         <video autoPlay muted loop className={classes.backgroundVideo}>
-          <source src={backgroundVideo} type="video/mp4" />
+          <source src={backgroundVideo} type={classes.video} />
           Your browser does not support the video tag.
         </video>
         <div className={classes.videoOverlayText}>
@@ -78,13 +78,15 @@ const App = () => {
           Your Trusted Partner for Innovative Solutions and Sustainable Development
           <button
             className={classes.knowMoreButton}
-            onClick={() => navigate('/about')}  
+            onClick={() => navigate('/about')}
           >
             Know More
           </button>
         </div>
       </section>
-      
+
+     
+  
       
 
 
