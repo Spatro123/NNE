@@ -99,13 +99,13 @@
   background: url('./dark0.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 
 .imageOverlayText {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 60%;
   transform: translate(-50%, -50%);
   color: rgb(167, 162, 162);
   font-size: 3em;
@@ -235,6 +235,10 @@
   border-radius: 10px;
 }
 
+.imageOverlayText{
+  display: flex;
+  justify-content: left;
+}
 
 @media (max-width: 600px) {
   .videoOverlayText, .imageOverlayText, .overlayText {
